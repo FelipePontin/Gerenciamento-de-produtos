@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/script.js" defer></script>
+    <title>Gerenciamento de produtos</title>
+</head>
+<body>
+    <header>
+        <h1>Gerenciamento de produtos</h1>
+    </header>
+    <main>
+        <section class="produtos">
+            <h2 class="titulo-produtos">Produtos</h2>
+            <p class="subtitulo-produtos">Lista de produtos cadastrados</p>
+        </section>
+        <section>
+            <table class="tabela">
+                <thead class="tabela-titulo">
+                    <tr class="titulo">
+                        <th class="titulo-id">ID</th>
+                        <th class="titulo-nome">Nome</th>
+                        <th class="titulo-quantidade">Quantidade</th>
+                        <th class="titulo-preco">Preço(R$)</th>
+                        <th class="titulo-acoes">Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-produtos">
+                    
+                </tbody>
+            </table>
+        </section>
+        <section class="produtos">
+            <h2 class="titulo-produtos">Cadastrar</h2>
+            <p class="subtitulo-produtos">Adicionar um novo produto</p>
+            <form class="formulario">
+                <div class="divisao-input">
+                    <p><label for="nome">Nome</label></p>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div class="divisao-input">
+                    <p><label for="quantidade">Quantidade</label></p>
+                    <input type="number" name="quantidade" id="quantidade">
+                </div>
+                <div class="divisao-input">
+                    <p><label for="preco">Preço</label></p>
+                    <input type="number" name="preco" id="preco">
+                </div>
+            </form>
+                <div>
+                    <button class="botao-adicionar botao-input" onclick="produto.salvar()">Salvar</button>
+                    <button class="botao-limpar botao-input" onclick="produto.limpar()">Limpar</button>
+                </div>
+            </div> 
+        </section>
+    </main>
+
+    <section class="alertas">
+        <div class="alerta-campo">
+            Preencha os campos corretamente!
+        </div>
+
+        <div class="alerta-deletar">
+            Produto removido com sucesso!
+        </div>
+        <div class="alerta-atualizar">
+            Produto atualizado com sucesso!
+        </div>
+    </section>
+</body>
+</html>
