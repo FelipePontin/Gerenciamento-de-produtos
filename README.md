@@ -1,4 +1,2 @@
 # Gerenciamento-de-produtos
-Gerenciamento de produtos
-
--Adicione, edite e delete produtos.
+Gerencie produtos, adicione, atualize e delete produtos.
